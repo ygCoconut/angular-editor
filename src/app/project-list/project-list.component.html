@@ -1,0 +1,17 @@
+<ul>
+    <!-- so called directive: allows us to access data from project.component.ts -->
+    <!-- this is a loop ! -->
+    <li *ngFor="let project of projects"> 
+        {{ project.name }}
+    </li>
+</ul>
+<!-- ngModel allows us to do 2-way binding -->
+<!-- this means changes in the input field will change
+what is in the variable and vice-versa! -->
+<input [(ngModel)]="newProjectName">
+<!-- oneway binding from view (input) to typescript (variable) -->
+<!-- We basically trigger sth in typescript -->
+<button (click)="createProject()">Create</button>
+
+
+<!-- one way binding from var to input are written with double curly brackets {{myvar}} -->

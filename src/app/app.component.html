@@ -1,0 +1,16 @@
+<title>Nils der Lappen</title>
+
+<h1>Online IDE</h1>
+
+<!-- navigation bar -->
+<nav>
+  <!-- routerLink is equiv. to url -->
+  <!-- active highlights the Link when hovering over it -->
+  <a routerLink="/projects" routerLinkActive="active">Projects</a> | 
+  <a routerLink="/editor" routerLinkActive="active">Editor</a>
+</nav>
+
+<!-- allows us to dynamically insert components into the outlet -->
+<router-outlet></router-outlet>
+
+<!-- <app-project-list></app-project-list> -->

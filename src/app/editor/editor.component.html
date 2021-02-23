@@ -1,0 +1,13 @@
+<!-- npm install ngx-monaco-editor@9.0.0 --save -->
+<!-- gives us a plugin for a nice editor written by microsoft! -->
+<!-- add to your angular.json the following: -->
+<!--               "assets": [
+        { "glob": "**/*", "input": "node_modules/ngx-monaco-editor/assets/monaco", "output": "./assets/monaco/" }
+      ], -->
+<p>editor works!</p>
+
+<!-- simply added this from the readme at: -->
+<!-- https://www.npmjs.com/package/ngx-monaco-editor -->
+<ngx-monaco-editor 
+        [options]="editorOptions" 
+        [(ngModel)]="code"></ngx-monaco-editor>
